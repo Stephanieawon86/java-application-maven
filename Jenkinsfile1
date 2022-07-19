@@ -1,0 +1,28 @@
+pipeline {
+  agent any
+  tools {
+    marven "maven-stephanie"
+  }
+  stages {
+    stage ('Maven clean'){
+           steps{
+             sh 'mvn clean'
+           }
+           }
+           stages ('Maven package') {
+             steps{
+               sh 'mvn package'
+             }
+           }
+  }
+}
+             
+           
+  
+    
+           
+           
+
+           
+           
+        
