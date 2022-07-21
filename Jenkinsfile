@@ -15,7 +15,7 @@ pipeline {
       }
     }
     
-    stages ('Docker image build and push){
+    stages ('Docker image build and push'){
             steps{
               withDockerRegistry([ credentialsId: "Docker_creds", url: "https://index.docker.io/v1/" ]){
                 sh 'docker build -t stephanieawono86?java_maven-jenkins . -f Dockerfile'
