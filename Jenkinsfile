@@ -20,6 +20,19 @@ pipeline {
               withDockerRegistry([ credentialsId: "Docker_creds", url: "https://index.docker.io/v1/" ]){
                 sh 'docker build -t stephanieawono86?java_maven-jenkins . -f Dockerfile'
                 sh 'docker push stephanieawono86/java-maven-jenkins'
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
               }
             }
             }
