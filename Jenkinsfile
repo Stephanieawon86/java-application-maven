@@ -49,3 +49,4 @@ stage ('Docker build and push'){
   
   
   }
+}
